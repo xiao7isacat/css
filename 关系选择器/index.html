@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*后代选择器*/
+    ul li{
+        color: red;
+    }
+    /*子代选择器*/
+    div>p{
+        color: aqua;
+    }
+    /*相邻兄弟选择器*/
+    h3+p{
+        color: blue;
+    }
+    /*相邻兄弟选择器*/
+    h3+p{
+        color: blue;
+    }
+    /*通用兄弟选择器*/
+    h4~p{
+        color: green;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <div>
+            <ol>
+                <li>列表4</li>
+            </ol>
+        </div>
+    </ul>
+    <div>
+        <p>大家好</p>
+        <ol>
+            <li>
+                <p>你好</p>
+            </li>
+        </ol>
+    </div>
+
+    <p>内容3</p>
+    <h3>标题</h3>
+    <p>内容1</p>
+    <p>内容2</p>
+    <div></div>
+ 
+    <p>内容3</p>
+    <h4>标题</h4>
+    <p>内容1</p>
+    <div></div>
+    <p>内容2</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: black;
+            height: 500px;
+            width: 500px;
+            /*开启盒子，默认水平排列*/
+            display: flex;
+            /*开启纵向排列*/
+            flex-direction: column;
+            /*水平方向上  flex-end center*/
+            justify-content: flex-start;
+            /*垂直方向上*/
+            align-items: center;
+
+            /*水平方向对齐*/
+        }
+        .son1{
+            /*子盒子的占比*/
+            height: 100px;
+            width: 100px;
+            flex: 1;
+            background-color: red;
+        }
+        .son2{
+            height: 100px;
+            width: 100px;
+            flex: 3;
+            background-color: blue;
+        }
+        .son3{
+            height: 100px;
+            width: 100px;
+            flex: 2;
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            /*
+                默认文档流存在的问题。
+                1. 如果水平摆放，默认以下面对齐
+                2. 多个空格会被折叠为一个
+                3. 图片之间有空格
+
+                脱离文档流的方式：
+                1. 浮动
+                2. 绝对定位
+                3. 相对定位
+            */
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <span>lock</span>
+    <img src="../images/WechatIMG190.jpg" alt="">
+
+    <p> 大家好     我是</p>
+    <img src="../images/WechatIMG190.jpg" alt="">
+    <img src="../images/WechatIMG190.jpg" alt="">
+</body>
+</html>

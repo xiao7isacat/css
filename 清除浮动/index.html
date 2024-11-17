@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*清楚浮动
+            1. 父元素设置高度
+            2. clear
+            3. overflow
+            4. 创建伪对象
+        */
+        .container{
+            background-color: aqua;
+            width: 300px;
+			overflow: hidden;
+			clear: both;
+        }
+		/*伪对象*/
+		/*.container::after{
+			content: "";
+			display: block;
+			clear: both;
+		}*/
+        .box{
+            background-color: green;
+            height: 50px;
+            width: 50px;
+            margin: 5px 5px;
+            float: left;
+        }
+        .text{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            margin: 5px 5px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    	<div class="text"></div>
+    </div>
+    <div class="text"></div>
+</body>
+</html>

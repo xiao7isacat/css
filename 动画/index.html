@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			/*动画名称 持续时间 运行效率 开始时间 循环次数(infinte 无限循环) 播放方向*/
+			animation: myAnim 3s linear 1s infinite normal;
+			/*运行效率 ease逐渐变慢 linear匀速 ease-in加速 ease-out减速 ease-int-oit先加后减*/
+		}
+		/*从一个样式改变为另一个样式*/
+		@keyframes myAnim{
+			0%{
+				background-color: green;
+			}
+			50%{
+				background-color: red;
+			}
+			100%{
+				background-color: blue;
+			}
+		}
+		/*鼠标滑动会触发效果*/
+		div:hover{
+			/*暂停*/
+			animation-play-state: paused;
+		}
+    </style>
+</head>
+<body>
+	<div></div>
+</body>
+</html> 
